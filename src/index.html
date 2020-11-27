@@ -183,7 +183,16 @@
         <div class="col-12 col-sm-6 col-md-4 portfolio-card">
           <div class="portfolio-img"><img class="img-portfolio" src="img/portfolio/card6.png" alt=""></div>
         </div>
-        <button class="row button-transparent portfolio-button" type="button">Explore All
+        <div class="hidden-card col-12 col-sm-6 col-sm-6  col-md-4 portfolio-card">
+          <div class="portfolio-img"><img class="img-portfolio adaptiv" src="img/portfolio/card2.png" alt=""></div>
+        </div>
+        <div class="hidden-card col-12 col-sm-6 col-md-4 portfolio-card">
+          <div class="portfolio-img"><img class="img-portfolio" src="img/portfolio/card3.png" alt=""></div>
+        </div>
+        <div class="hidden-card col-12 col-sm-6 col-md-4 portfolio-card">
+          <div class="portfolio-img"><img class="img-portfolio" src="img/portfolio/card4.png" alt=""></div>
+        </div>
+        <button onclick="showAllCards()" class="row button-transparent portfolio-button" type="button">Explore All
           <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
         </button>
         <!-- <button class="btn btn-primary row button-transparent portfolio-button load-more" type="button" disabled>
@@ -203,7 +212,7 @@
         <!-- choice -->
         <div class="testimonials-choice">
           <!-- 1 -->
-          <div class="choice-first choice">
+          <div id="choice-firstH" class="choice-first choice hidden-card visible">
             <div class="choice-text">"What looked like a small patch of purple grass, above five feet square, was moving
               across the sand in their direction. When it came near enough he perceived that it was not grass there were
               no blades, but only purple roots. The roots were revolving, like the spokes of a rimless wheel."</div>
@@ -211,11 +220,38 @@
             <div class="choice-skils">Digital Director, Microsoft</div>
           </div>
           <!-- 1 -->
+          <!-- 2 -->
+          <div id="choice-secondH" class="choice-first choice hidden-card">
+            <div class="choice-text">"What looked like a small patch of purple grass, above five feet square, was moving
+              across the sand in their direction. When it came near enough he perceived that it was not grass there were
+              no blades, but only purple roots. The roots were revolving, like the spokes of a rimless wheel."</div>
+            <div class="choice-name">Alla Tiger</div>
+            <div class="choice-skils">Digital Director, Microsoft</div>
+          </div>
+          <!-- 2 -->
+          <!-- 3 -->
+          <div id="choice-threeH" class="choice-first choice hidden-card ">
+            <div class="choice-text">"What looked like a small patch of purple grass, above five feet square, was moving
+              across the sand in their direction. When it came near enough he perceived that it was not grass there were
+              no blades, but only purple roots. The roots were revolving, like the spokes of a rimless wheel."</div>
+            <div class="choice-name">Dasha Rusiniva</div>
+            <div class="choice-skils">Digital Director, Microsoft</div>
+          </div>
+          <!-- 3 -->
+          <!-- 4 -->
+          <div id="choice-fourH" class="choice-first choice hidden-card ">
+            <div class="choice-text">"What looked like a small patch of purple grass, above five feet square, was moving
+              across the sand in their direction. When it came near enough he perceived that it was not grass there were
+              no blades, but only purple roots. The roots were revolving, like the spokes of a rimless wheel."</div>
+            <div class="choice-name">Evgeniy Facker</div>
+            <div class="choice-skils">Digital Director, Microsoft</div>
+          </div>
+          <!-- 4 -->
           <div class="choice-people align-items-center">
-            <div href="#" class="people-link" onclick="activeScript()"><img class="choice-circle" id="firstIcon" src="img/choice/pep1.png" alt=""></div>
-            <div href="#" class="people-link" onclick="activeScript()"><img class="choice-circle" id="firstIcon" src="img/choice/pep2.png" alt=""></div>
-            <div href="#" class="people-link" onclick="activeScript()"><img class="choice-circle" id="firstIcon" src="img/choice/pep3.png" alt=""></div>
-            <div href="#" class="people-link" onclick="activeScript()"><img class="choice-circle" id="firstIcon" src="img/choice/pep4.png" alt=""></div>
+            <div href="#choice-firstH" class="people-link"><img onclick="switchCard('choice-firstH')" class=" choice-circle" src="img/choice/pep1.png" alt=""></div>
+            <div href="#choice-secondH" class="people-link"><img class="choice-circle" src="img/choice/pep2.png" alt=""></div>
+            <div href="#choice-threeH" class="people-link"><img class="choice-circle" src="img/choice/pep3.png" alt=""></div>
+            <div href="#choice-fourH" class="people-link"><img class="choice-circle" src="img/choice/pep4.png" alt=""></div>
           </div>
           <div class="row choice-icon icons">
             <img class="" src="img/services/Bitmap.png" alt="">
@@ -431,17 +467,19 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" -->
+    <!-- integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="module">
     import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
   </script>
+  <script src="js/choise.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/main.js"></script>
 </body>
 

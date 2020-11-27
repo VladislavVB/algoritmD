@@ -1,36 +1,33 @@
-let swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      340: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-      },
+let hiddenCard,
+    isOpen = false;
+window.onload = () => {
+    hiddenCard = document.querySelectorAll('.hidden-card');
+}
+const showAllCards = () => {
+    if (isOpen) {
+        document.querySelector('.portfolio-button').innerHTML='Explore All'
+        hiddenCard.forEach(element => {
+            element.classList.add('hidden-card');
+        });
+        isOpen = false;
+    } else {
+        document.querySelector('.portfolio-button').innerHTML='Close'
+        hiddenCard.forEach(element => {
+            element.classList.remove('hidden-card');
+        });
+        isOpen = true;
     }
-  });
 
-  const buttomMobileMenu = document.querySelector('.btn_mobile');
-  const navigationMenu = document.querySelector('.nav-items');
-  buttomMobileMenu.addEventListener('click', () => {
-    navigationMenu.classList.toggle('activebur');
-  })
+}
 
-// let activeScript = () => {
-//   document.getElementById('firstIcon').classList.add('active');
-// }
+
+
+
+
+
+
+
+
+
+
+

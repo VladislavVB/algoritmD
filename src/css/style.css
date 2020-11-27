@@ -8,6 +8,18 @@ a {
   style: none;
 }
 
+.tabs-content {
+  display: none;
+}
+
+.hidden-card {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 button {
   style: none;
   border: none;
@@ -93,11 +105,7 @@ button:focus {
   height: 100%;
 }
 
-.active {
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid #F87853;
-  padding: 10px;
+.choice-circle-active {
   opacity: 1;
 }
 
@@ -818,6 +826,10 @@ button:focus {
 
 .icons img {
   margin: 0px 5px;
+}
+
+.choice-circle-active {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1135px) {
