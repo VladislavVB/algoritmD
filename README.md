@@ -1,1 +1,1 @@
-# algoritmD
+# algoritmDesign
