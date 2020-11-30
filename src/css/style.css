@@ -325,8 +325,9 @@ button:focus {
 }
 
 .features {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 126, 74, 0.15)), to(rgba(106, 123, 227, 0.15)));
-  background: linear-gradient(180deg, rgba(250, 126, 74, 0.15) 0%, rgba(106, 123, 227, 0.15) 100%);
+  background: url("../img/features/Groupbg.png") top right/contain no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(250, 126, 74, 0.15)), to(rgba(106, 123, 227, 0.15)));
+  background: url("../img/features/Groupbg.png") top right/contain no-repeat, linear-gradient(180deg, rgba(250, 126, 74, 0.15) 0%, rgba(106, 123, 227, 0.15) 100%);
+  background-size: 30%;
 }
 
 .features-lowwer {
@@ -396,19 +397,6 @@ button:focus {
   max-width: 365px;
 }
 
-.portfolio-plus {
-  position: absolute;
-  background-color: #FFFFFF;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 10px;
-  height: 85%;
-  width: 85%;
-  padding: 32px 32px 40px 32px;
-}
-
 .plus {
   margin-right: 0px;
 }
@@ -450,6 +438,31 @@ button:focus {
 }
 
 .portfolio-plus {
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  height: 85%;
+  width: 85%;
+  padding: 32px 32px 40px 32px;
+  display: none;
+}
+
+.portfolio-plusmid {
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  height: 85%;
+  width: 85%;
+  padding: 32px 32px 40px 32px;
+  display: none;
   display: none;
 }
 
@@ -460,6 +473,18 @@ button:focus {
 }
 
 .portfolio-card:hover .portfolio-plus {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: block;
+}
+
+.portfolio-card {
+  margin-top: 30px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.portfolio-card:hover .portfolio-plusmid {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   display: block;
@@ -1020,6 +1045,14 @@ button:focus {
   .footer-button {
     margin-left: 15px;
   }
+  .choice-icon img {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .connect-title {
+    margin-top: 73px;
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -1038,6 +1071,9 @@ button:focus {
 }
 
 @media screen and (max-width: 575px) {
+  .header-img {
+    padding: 0;
+  }
   .header-img img {
     width: 300px;
   }
@@ -1091,13 +1127,20 @@ button:focus {
     margin-bottom: 24px;
     line-height: 32px;
   }
+  .ground-img {
+    max-width: 280px;
+  }
   .features {
     padding-left: 8px;
+    background: url("../img/features/Groupbgmobile.png") top right/contain no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(250, 126, 74, 0.15)), to(rgba(106, 123, 227, 0.15)));
+    background: url("../img/features/Groupbgmobile.png") top right/contain no-repeat, linear-gradient(180deg, rgba(250, 126, 74, 0.15) 0%, rgba(106, 123, 227, 0.15) 100%);
+    background-size: 30%;
   }
   .features-title {
     padding-top: 87px;
     margin-bottom: 39px;
     font-size: 40px;
+    padding-left: 10px;
   }
   .features-img {
     margin-top: 50px;
@@ -1142,7 +1185,6 @@ button:focus {
   }
   .adaptiv-bottom {
     margin-bottom: 16px;
-    margin-top: 55px;
   }
   .testimonials-title {
     margin: auto;
@@ -1150,6 +1192,9 @@ button:focus {
     margin-bottom: 17px;
     font-size: 40px;
     max-width: 273px;
+  }
+  .testimonials-content {
+    background-size: 190%, 60%;
   }
   .choice-people {
     margin-top: 50px;
@@ -1200,6 +1245,14 @@ button:focus {
   .container-connect-bg {
     padding-left: 13px;
     padding-right: 13px;
+    background: #2F3A62 url("../img/connect/Ovalmobile.png") top right/contain no-repeat;
+    background-size: 100%;
+    background-position: 0 20;
+  }
+  .connect-content {
+    background: url("../img/connect/Ovalmobile2.png") bottom left/contain no-repeat;
+    background-size: 100%;
+    background-position: 0 20;
   }
   .connect-title {
     margin-top: 73px;
@@ -1258,8 +1311,11 @@ button:focus {
             justify-content: center;
   }
   .img-portfolio {
-    width: 329px;
-    height: 384px;
+    width: 300px;
+    height: 320px;
+  }
+  .portfolio-plusmid {
+    width: 92%;
   }
   .plus-up-title {
     font-size: 18px;

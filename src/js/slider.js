@@ -6,12 +6,16 @@ let swiper = new Swiper('.swiper-container', {
       clickable: true,
     },
     breakpoints: {
-      340: {
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      400: {
         slidesPerView: 1,
         spaceBetween: 20,
       },
       640: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       768: {
