@@ -1,5 +1,3 @@
-
-
 let swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -32,8 +30,3 @@ let swiper = new Swiper('.swiper-container', {
   buttomMobileMenu.addEventListener('click', () => {
     navigationMenu.classList.toggle('activebur');
   })
-
-  
-// let activeScript = () => {
-//   document.getElementById('firstIcon').classList.add('active');
-// }

@@ -1,11 +1,13 @@
-let currentCard 
-window.onload = () => {
-    currentCard = document.querySelector('.visible');
-    console.log(currentCard);
-}
-const switchCard = (cardId) => {
-    document.getElementById(cardId).classList.add('visible')
-    console.log(currentCard);
-    currentCard.classList.remove('visible')
-}
-//пытался реализовать...... но мозгг ууже не роботает
+$(document).ready(function () {
+    let peopleLinkItem = $('.people-link');
+
+    peopleLinkItem.on('click', function(event) {
+        event.preventDefault();
+        let activeContent = $(this).attr('href');
+        $('.visible').toggleClass('visible')
+        $(activeContent).toggleClass('visible');
+
+        $('.choice-circle-active').toggleClass('choice-circle-active')
+        $(this).toggleClass('choice-circle-active');
+    });
+});

@@ -18,7 +18,7 @@
     border-radius: 10px
     img
 
-.portfolio-img-first
+.portfolio-img-relative
     position: relative
     max-width: 365px
 .portfolio-plus
@@ -61,5 +61,11 @@
     width: 170px
 .img-portfolio
     width: 100%
+.portfolio-plus
+    display: none
 .portfolio-card
     margin-top: 30px
+    transition-duration: 1s
+    &:hover .portfolio-plus
+        transition-duration: 1s
+        display: block

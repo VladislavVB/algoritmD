@@ -4,7 +4,14 @@
 a
     color: $black
     style: none
+    cursor: pointer
+    transition: 0.3s
     &:hover
+        transition: 0.3s
+        cursor: pointer
+        color: $black
+        text-decoration: none
+        filter: drop-shadow(0 4px 4px rgba(0,0,0,.35))
 .tabs-content 
   display: none
 .hidden-card
@@ -17,7 +24,10 @@ button
     border: none
     background: transparent
     outline: none 0
+    transition: 0.3s
     &:focus 
+        transition: 0.3s
+        cursor: pointer
         outline: none 0
 .button-transparent
 
