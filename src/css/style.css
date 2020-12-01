@@ -732,6 +732,12 @@ button:focus {
   color: rgba(19, 27, 66, 0.502378);
 }
 
+.img-bg-blog {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .description {
   font-size: 16px;
   margin-right: 32px;
@@ -1070,7 +1076,7 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 625px) {
   .header-img {
     padding: 0;
   }
@@ -1341,8 +1347,43 @@ button:focus {
     margin: auto;
   }
   .img-bg {
-    height: 368px;
-    width: 329px;
+    width: 280px;
+    height: 310px;
+  }
+  .team-name {
+    margin-top: 23px;
+  }
+  .team-description {
+    margin-top: 3px;
+  }
+  .team-card-img {
+    width: 2800px;
+  }
+  .team-card {
+    max-width: 280px;
+  }
+  .blog-card {
+    max-width: 280px;
+    margin: auto;
+  }
+  .blog-card-uptitle {
+    margin-bottom: 13px;
+  }
+  .blog-card-title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .img-bg {
+    width: 280px;
+    height: 310px;
+  }
+  .team-name {
+    margin-top: 23px;
+  }
+  .team-description {
+    margin-top: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
