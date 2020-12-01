@@ -26,7 +26,7 @@ a:hover {
 }
 
 .hidden-card {
-  display: none;
+  display: none !important;
 }
 
 .visible {
@@ -940,7 +940,7 @@ button:focus {
     font-size: 14px;
   }
   .plus-title {
-    font-size: 17px;
+    font-size: 15px;
   }
   .plus-plus {
     height: 30px;
@@ -1082,6 +1082,9 @@ button:focus {
   }
   .header-img img {
     width: 300px;
+  }
+  .plus-title {
+    font-size: 17px;
   }
   .nav-header {
     padding-top: 16px;
