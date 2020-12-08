@@ -31,7 +31,7 @@
           <li class=""><a class="nav-item" href="#contact">Contact</a></li>
         </ul>
         <button class="btn_mobile d-md-none d-inline-block "><img src="img/menu.png" alt=""></button>
-        <div class="nav-button button-transparent"  data-toggle="modal">Contact Us</div>
+        <div class="nav-button button-transparent"  onclick="openModal()">Contact Us</div>
       </div>
       <div id="about" class="row header-content">
         <div class="header-content-text col-sm-12 col-md-5">
@@ -39,7 +39,7 @@
           <div class="text-title">We Make Websites.</div>
           <div class="text-description">The sky was cloudless and of a deep dark blue. The spectacle before us was
             indeed sublime.</div>
-          <div class="text-button button-color">Explore Our Work</div>
+          <div class="text-button button-color" onclick="openModal()">Explore Our Work</div>
         </div>
         <div class="header-img col-sm-12 col-md-7"><img src="img/Group 1.png" alt=""></div>
       </div>
@@ -530,24 +530,20 @@
       </div>
     </div>
   </footer>
-  <div class="modal modal-content-show ">
-    <div class="modal-dialog">
-      
+  <!--модальное окно -->
+  <div class="modal  ">
       <form class="form connect-form" action="#">
-        <div class="modal-close"><img src="img/close.png" alt=""></div>
+        <div class="modal-close" onclick="closeModal()"><img src="img/close.png" alt=""></div>
         <input class="input connect-email" placeholder="Your Email" type="text">
         <textarea class="input connect-message " placeholder="Message" type="text"></textarea>
         <button class="button-color connect-button">Submit</button>
       </form>
-    </div>
   </div>
   <!-- . -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script type="module">
-    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
-  </script>
+  <script type="module">import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'</script>
   <script src="js/modal.js"></script>
   <script src="js/choise.js"></script>
   <script src="js/slider.js"></script>
