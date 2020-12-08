@@ -60,7 +60,7 @@
     height: 85%
     width: 85%
     padding: 32px 32px 40px 32px
-    display: none
+    opacity: 0
 .portfolio-plusmid
     position: absolute
     background-color: $white
@@ -71,17 +71,17 @@
     height: 85%
     width: 85%
     padding: 32px 32px 40px 32px
-    display: none
-    display: none
+    opacity: 0
 .portfolio-card
     margin-top: 30px
     transition-duration: 1s
     &:hover .portfolio-plus
         transition-duration: 1s
-        display: block
+        opacity: 1
 .portfolio-card
     margin-top: 30px
     transition-duration: 1s
+    
     &:hover .portfolio-plusmid
         transition-duration: 1s
-        display: block
+        opacity: 1
