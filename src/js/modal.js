@@ -4,5 +4,12 @@ let openModal = () => {
 
 let closeModal = () => {
     document.querySelector('.modal').classList.remove('modal-visible');
+    
 }
+
+let closeModalBlack = () => {
+    document.querySelector('.modal').classList.remove('modal-visible');
+    
+}
+
 

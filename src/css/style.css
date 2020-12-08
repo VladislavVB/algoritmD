@@ -69,6 +69,7 @@ button:focus {
 }
 
 .button-transparent:hover {
+  cursor: pointer;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -92,6 +93,7 @@ button:focus {
 }
 
 .button-color:hover {
+  cursor: pointer;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -954,6 +956,10 @@ button:focus {
   z-index: 100;
   opacity: 1;
   visibility: visible;
+}
+
+.modal-close {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
